@@ -36,7 +36,7 @@ cacheSolve <- function(m, ...) {
     return(inverse)                   # get it from the cache and skips the computation. 
   }
   data <- m$get()                     # otherwise, calculates the inverse
-  invserse <- solve(data, ...)
+  inverse <- solve(data, ...)
   m$setinv(inverse)                   # sets the value of the inverse in the cache via setinv
   return(inverse)
 }
